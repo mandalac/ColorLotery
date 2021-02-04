@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ColorsDetailVC.swift
 //  ColorLotery
 //
 //  Created by Vasili Mandalac on 2/3/21.
@@ -7,13 +7,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ColorsDetailVC: UIViewController {
+    
+    var color: UIColor?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.backgroundColor = color ?? .blue
     }
-
-
 }
-

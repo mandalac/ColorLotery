@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		161B5FB225CB0689008F77DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161B5FB125CB0689008F77DF /* AppDelegate.swift */; };
 		161B5FB425CB0689008F77DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161B5FB325CB0689008F77DF /* SceneDelegate.swift */; };
-		161B5FB625CB0689008F77DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161B5FB525CB0689008F77DF /* ViewController.swift */; };
 		161B5FB925CB0689008F77DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 161B5FB725CB0689008F77DF /* Main.storyboard */; };
 		161B5FBB25CB068A008F77DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 161B5FBA25CB068A008F77DF /* Assets.xcassets */; };
 		161B5FBE25CB068A008F77DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 161B5FBC25CB068A008F77DF /* LaunchScreen.storyboard */; };
+		161B5FC825CB0707008F77DF /* ColorsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161B5FC725CB0707008F77DF /* ColorsTableVC.swift */; };
+		161B5FCC25CB08C4008F77DF /* ColorsDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161B5FCB25CB08C4008F77DF /* ColorsDetailVC.swift */; };
+		16C1DDD725CB3083009E432A /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C1DDD625CB3083009E432A /* UIColor+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		161B5FAE25CB0689008F77DF /* ColorLotery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorLotery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		161B5FB125CB0689008F77DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		161B5FB325CB0689008F77DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		161B5FB525CB0689008F77DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		161B5FB825CB0689008F77DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		161B5FBA25CB068A008F77DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		161B5FBD25CB068A008F77DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		161B5FBF25CB068A008F77DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		161B5FC725CB0707008F77DF /* ColorsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsTableVC.swift; sourceTree = "<group>"; };
+		161B5FCB25CB08C4008F77DF /* ColorsDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsDetailVC.swift; sourceTree = "<group>"; };
+		16C1DDD625CB3083009E432A /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		161B5FB025CB0689008F77DF /* ColorLotery */ = {
 			isa = PBXGroup;
 			children = (
-				161B5FB125CB0689008F77DF /* AppDelegate.swift */,
-				161B5FB325CB0689008F77DF /* SceneDelegate.swift */,
-				161B5FB525CB0689008F77DF /* ViewController.swift */,
+				16C1DDDB25CB32E2009E432A /* Extentions */,
+				16C1DDD925CB3099009E432A /* Delegate */,
+				161B5FCF25CB0CDE008F77DF /* VC */,
 				161B5FB725CB0689008F77DF /* Main.storyboard */,
 				161B5FBA25CB068A008F77DF /* Assets.xcassets */,
 				161B5FBC25CB068A008F77DF /* LaunchScreen.storyboard */,
 				161B5FBF25CB068A008F77DF /* Info.plist */,
 			);
 			path = ColorLotery;
+			sourceTree = "<group>";
+		};
+		161B5FCF25CB0CDE008F77DF /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				161B5FC725CB0707008F77DF /* ColorsTableVC.swift */,
+				161B5FCB25CB08C4008F77DF /* ColorsDetailVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		16C1DDD925CB3099009E432A /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				161B5FB125CB0689008F77DF /* AppDelegate.swift */,
+				161B5FB325CB0689008F77DF /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		16C1DDDB25CB32E2009E432A /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				16C1DDD625CB3083009E432A /* UIColor+Ext.swift */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +167,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				161B5FB625CB0689008F77DF /* ViewController.swift in Sources */,
+				161B5FC825CB0707008F77DF /* ColorsTableVC.swift in Sources */,
+				161B5FCC25CB08C4008F77DF /* ColorsDetailVC.swift in Sources */,
+				16C1DDD725CB3083009E432A /* UIColor+Ext.swift in Sources */,
 				161B5FB225CB0689008F77DF /* AppDelegate.swift in Sources */,
 				161B5FB425CB0689008F77DF /* SceneDelegate.swift in Sources */,
 			);
